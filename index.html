@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coming Soon - Coding Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="main-container">
+    <div class="content">
+      <h2 class="subheading">CODE STARTUP</h2>
+      <h1 class="heading">WE'RE COMING SOON</h1>
+      <p class="message">
+        Hello fellow Coders! We're currently building our first coding website. Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      <form class="subscribe-form" id="subscribeForm">
+        <input type="email" placeholder="Email Address" required />
+        <button type="submit">Notify Me</button>
+      </form>
+    </div>
+    <div class="image-section">
+      <img src="images/my_image.jpg" alt="Fashion Model" />
+    </div>
+  </div>
+
+  <script>
+    // Optional: Handle form submission
+    document.getElementById('subscribeForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for subscribing!');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
